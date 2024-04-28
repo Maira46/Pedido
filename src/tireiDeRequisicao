@@ -1,0 +1,11 @@
+this.mesa.setDisponivel(false); 
+
+/**
+     * Método para cancelar a reserva.
+     * Marca a reserva como cancelada e marca a mesa associada como disponível.
+     */
+    public void cancelar() {
+        this.ativa = false; 
+        this.mesa.liberar(); 
+    }
+
